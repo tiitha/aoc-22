@@ -12,7 +12,7 @@ part_1 = 0
 part_2 = 0 
 
 data = data.split("\n").each do |l|
-	a,b = l.split(",").map { |a| x = a.split("-"); (x[0]..x[1]).to_a }
+	a,b = l.split(",").map { |a| x,y = a.split("-"); (x..y).to_a }
 	x = a & b 
 
 	part_1 += 1 if a == x or b == x
@@ -21,3 +21,4 @@ end
 
 puts "part 1: #{part_1}"
 puts "part 2: #{part_2}"
+

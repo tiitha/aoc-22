@@ -28,5 +28,3 @@ data = data.split("\n").each do |l|
 end
 puts res.sum
 
-
-puts "abc" & "cde"
