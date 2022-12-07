@@ -47,7 +47,6 @@ data.split("\n").each do |l|
 			cwd.push(z)
 		end
 	when "dir"
-		k = 
 		dir[cwd.join(";")][:children] << y
 	else
 		dir[cwd.join(";")][:sum] += x.to_i
