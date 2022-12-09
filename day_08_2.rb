@@ -1,3 +1,5 @@
+require 'matrix'
+
 data = '''30373
 25512
 65332
