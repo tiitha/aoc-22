@@ -161,7 +161,7 @@ sum = 0
 res = ""
 (0..r.size-1).each do |c|
 	sum += r[c-1]*c if c == 20 or ((c-20)%40) == 0
-	res += ( (r[c]-1..r[c]+1).include? (c%40) ) ? "#" : "."
+	res += ( (r[c]-1..r[c]+1).include? (c%40) ) ? "🐶" : "🐻"
 	res += "\n" if (c+1) % 40 == 0
 end
 puts "part 1: #{sum}"
